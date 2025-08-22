@@ -1,0 +1,72 @@
+body {
+  background: #f8fafc;
+  font-family: "Poppins", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+}
+
+/* Navbar */
+/* Increase navbar height */
+.navbar {
+  min-height: 80px;
+}
+
+/* Brand styling */
+.navbar-brand {
+  font-size: 1.8rem;
+  letter-spacing: -0.5px;
+  margin-left: 0;
+}
+
+/* Nav links */
+.navbar-nav .nav-link {
+  padding: 8px 16px;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: rgba(0, 0, 0, 0.712);
+}
+
+  
+
+
+/* Mobile view: center the logo */
+@media (max-width: 991px) {
+  .navbar-brand {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+
+/* Cards */
+.card.product {
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform .2s ease, box-shadow .2s ease;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+  background: #fff;
+}
+.card.product:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 30px rgba(0,0,0,0.12);
+}
+.card.product img {
+  height: 200px;
+  object-fit: cover;
+}
+.badge-discount {
+  position: absolute;
+  top: 10px; left: 10px;
+  background: #ef4444;
+  color: #fff;
+  border-radius: 8px;
+  padding: 4px 8px;
+  font-weight: 600;
+  font-size: .8rem;
+}
+.rating { color: #f59e0b; font-size: .95rem; }
+
+/* Buttons */
+.btn-pill { border-radius: 999px; }

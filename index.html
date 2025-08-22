@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopX - Modern E-commerce</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Poppins Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+   <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top py-3">
+  <div class="container">
+
+    <!-- Brand -->
+    <a class="navbar-brand fw-bold page-link" data-page="home" href="#">
+      ShopX
+    </a>
+
+    <!-- Toggler (Hamburger Menu) -->
+    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible Nav Links -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active page-link" data-page="home" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link page-link" data-page="products" href="#">Products</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link page-link" data-page="cart" href="#">
+            Cart (<span id="cart-count">0</span>)
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+    <!-- Spacer -->
+    <div style="height:80px;"></div>
+
+    <!-- Pages -->
+    <div class="container my-5">
+
+        <!-- Home Page -->
+        <section id="home" class="page">
+            <div class="text-center py-4">
+                <h1 class="fw-bold">Welcome to ShopX</h1>
+                <p class="lead text-muted">Your one-stop shop for modern tech accessories</p>
+                <button class="btn btn-dark btn-pill go-products">Shop Now</button>
+            </div>
+
+            <div class="mt-5">
+                <h3 class="fw-bold mb-4 text-center">Featured Products</h3>
+                <div class="row g-4" id="featured-products">
+                    <!-- Featured products will load here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Products Preview -->
+
+
+        <!-- Products Page -->
+        <section id="products" class="page d-none">
+            <div class="row mb-4">
+                <div class="col-md-6">
+                    <h2 class="fw-bold">Products</h2>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <input type="text" id="search" class="form-control" placeholder="Search products...">
+                </div>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="row g-4" id="product-grid">
+                <!-- Products will load here dynamically -->
+            </div>
+
+            <!-- Message if no product found -->
+            <div id="no-products" class="text-center text-muted mt-4 d-none">
+                <p>No products found 😔</p>
+            </div>
+        </section>
+
+        <!-- Cart Page -->
+        <section id="cart" class="page d-none">
+            <h2 class="fw-bold mb-4">Your Cart</h2>
+            <ul id="cart-items" class="list-group"></ul>
+        </section>
+
+    </div> <!-- container -->
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>

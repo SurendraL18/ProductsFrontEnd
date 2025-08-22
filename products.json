@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "name": "Wireless Earbuds",
+    "price": 2999,
+    "description": "High-quality sound with noise cancellation.",
+    "image": "Images/wireless_earpods.webp",
+    "alt": "ShopX wireless earbuds with noise cancellation and high-quality sound"
+  },
+  {
+    "id": 2,
+    "name": "Smart Watch",
+    "price": 4999,
+    "description": "Track your fitness & stay connected.",
+    "image": "Images/smart_watch.webp",
+    "alt": "ShopX smart watch for fitness tracking and mobile connectivity"
+  },
+  {
+    "id": 3,
+    "name": "Portable Speaker",
+    "price": 1999,
+    "description": "Enjoy music anywhere with deep bass.",
+    "image": "Images/portable_speaker.webp",
+    "alt": "ShopX portable Bluetooth speaker with deep bass for outdoor music"
+  },
+  {
+    "id": 4,
+    "name": "Gaming Mouse",
+    "price": 1499,
+    "description": "Precision and speed for pro gamers.",
+    "image": "Images/gaming_mouse.webp",
+    "alt": "ShopX gaming mouse with precision tracking and fast response for pro gamers"
+  }
+]
